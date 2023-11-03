@@ -1,7 +1,8 @@
 import React from "react";
-function Bar(props) {
+
+function Bar() {
 return (
-<div class="bar">
+<div className="bar">
           <div class="bar__content">
             <div class="bar__player-progress"></div>
             <div class="bar__player-block">
@@ -84,7 +85,8 @@ return (
                 </div>
               </div>
             </div>
-</div>
-)}
-
+          </div>
+        </div>
+        )
+        }
 export default Bar;
