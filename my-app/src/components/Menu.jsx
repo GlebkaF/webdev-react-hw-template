@@ -1,7 +1,10 @@
 import React from "react";
+
 function Menu() {
 return (
-<nav className="main__nav nav">
+  <div className="wrapper">
+    <main className="main">
+      <nav className="main__nav nav">
             <div className="nav__logo logo">
               <img className="logo__image" src="img/logo.png" alt="logo" />
             </div>
@@ -24,6 +27,9 @@ return (
               </ul>
             </div>
           </nav>
+        </main>
+      </div>
+    
 )
 }
 
