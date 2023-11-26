@@ -42,7 +42,7 @@ export const Filter = () => {
     return (
         <Filter>
             <div className="filter__title">Искать по:</div>
-            <centerblock__h2 className="filter__content">
+            <centerblock__content className="filter__content">
                 <filter__button
                     $isActive={activeAuthor}
                     onClick={clickOnAuthorFilter}
@@ -50,8 +50,8 @@ export const Filter = () => {
                     исполнителю
                 </filter__button>
                 {visibleAuthor && <AuthorList />}
-            </centerblock__h2>
-            <centerblock__h2 className="filter__content">
+            </centerblock__content>
+            <centerblock__content className="filter__content">
                 <filter__button
                     $isActive={activeYear}
                     onClick={clickOnYearFilter}
@@ -59,8 +59,8 @@ export const Filter = () => {
                     году выпуска
                 </filter__button>
                 {visibleYear && <YearList />}
-            </centerblock__h2>
-            <centerblock__h2 className="filter__content">
+            </centerblock__content>
+            <centerblock__content className="filter__content">
                 <filter__button
                     $isActive={activeGenre}
                     onClick={clickOnGenreFilter}
@@ -68,7 +68,7 @@ export const Filter = () => {
                     жанру
                 </filter__button>
                 {visibleGenre && <GenreList />}
-            </centerblock__h2>
+            </centerblock__content>
 
         </Filter>
     )
