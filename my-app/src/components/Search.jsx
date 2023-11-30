@@ -14,7 +14,6 @@ function Search () {
           name="search"/>
       </div>
       <h2 className="centerblock__h2">Треки</h2>
-      <Filter />
       <div className="centerblock__filter filter">
         <div className="filter__title">Искать по:</div>
         <div className="filter__button button-author _btn-text">
