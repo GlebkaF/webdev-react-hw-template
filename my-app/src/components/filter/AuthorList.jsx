@@ -1,13 +1,12 @@
 import React from "react";
 
-
 export const AuthorList = () => {
     return (
-        <list>
-            <AuthorList>Dynoro, Outwork, Mr. Gee</AuthorList>
-            <AuthorList>Стоункат, Psychopath</AuthorList>
-            <AuthorList>HYBIT, Mr. Black, Offer Nissim, Hi Profile</AuthorList>
-            <AuthorList>Blue Foundation, Zeds Dead</AuthorList>
-        </list>
+        <div>
+            <div>Dynoro, Outwork, Mr. Gee</div>
+            <div>Стоункат, Psychopath</div>
+            <div>HYBIT, Mr. Black, Offer Nissim, Hi Profile</div>
+            <div>Blue Foundation, Zeds Dead</div>
+        </div>
     )
 }

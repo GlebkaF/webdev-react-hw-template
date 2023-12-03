@@ -6,18 +6,19 @@ import Player from "./components/Player";
 import SideBar from "./components/Sidebar/SideBar";
 import Search from "./components/Search";
 import Footer from "./components/footer";
-import { Filter } from "./components/filter/filter";
+import Filter from "./components/filter/filter";
 
 function App() {
   return (
     <div>
       <Menu />
       <Search />
+      <Filter />
       <Player />
       <SideBar />
       <Bar />
       <Footer />
-      <Filter />
+      
     </div>
   );
 }

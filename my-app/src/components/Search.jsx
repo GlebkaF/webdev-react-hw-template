@@ -1,5 +1,6 @@
 import React from "react";
-import { Filter } from "./filter/filter";
+import Filter from "./filter/filter";
+//import Filter from "../components/filter/filter"
 
 function Search () {
     return (
@@ -15,16 +16,16 @@ function Search () {
           name="search"/>
       </div>
       <h2 className="centerblock__h2">Треки</h2>
-      < Filter />
       <div className="centerblock__filter filter">
-        <div className="filter__title">Искать по:</div>
-        <div className="filter__button button-author _btn-text">
+        
+        {/*<Filter />*/}
+       {/*  <div className="filter__button button-author _btn-text">
           исполнителю
         </div>
         <div className="filter__button button-year _btn-text">
           году выпуска
         </div>
-        <div className="filter__button button-genre _btn-text">жанру</div>
+        <div className="filter__button button-genre _btn-text">жанру</div> */}
       </div>
       </div>
     )

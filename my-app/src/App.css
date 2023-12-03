@@ -293,14 +293,21 @@ body {
 }
 
 .filter__title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 40px 20px 111px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 15px;
+  gap: 15px;
+  background-color: black;
 }
 
 .filter__button {
+  width: 144px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

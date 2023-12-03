@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { Filter } from "./filter";
 
 export const Centerblock = () => {
@@ -28,4 +28,4 @@ export const Centerblock = () => {
         </div> 
         </div>
     )
-}
+}*/
