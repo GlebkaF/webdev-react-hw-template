@@ -1,6 +1,6 @@
 import React from "react";
 import Filter from "./filter/filter";
-//import Filter from "../components/filter/filter"
+
 
 function Search () {
     return (

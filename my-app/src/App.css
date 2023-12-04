@@ -112,6 +112,8 @@ body {
 }
 
 .main__centerblock {
+  display: flex;
+  flex-wrap: wrap;
   width: auto;
   -webkit-box-flex: 3;
   -ms-flex-positive: 3;
@@ -119,6 +121,8 @@ body {
   padding: 20px 40px 20px 111px;
   background-color: black;
 }
+
+
 
 .main__sidebar {
   max-width: 418px;

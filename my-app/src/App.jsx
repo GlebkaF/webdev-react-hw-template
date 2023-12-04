@@ -12,9 +12,11 @@ function App() {
   return (
     <div>
       <Menu />
+    
       <Search />
+
       <Filter />
-      <Player />
+      <Player /> 
       <SideBar />
       <Bar />
       <Footer />
