@@ -1,7 +1,7 @@
 import React from "react";
 import Bar from "./components/Bar";
 import "./App.css";
-import Menu from "./components/Menu";
+import Menu from "./components/Menu/Menu";
 import Player from "./components/Player";
 import SideBar from "./components/Sidebar/SideBar";
 import Search from "./components/Search";
