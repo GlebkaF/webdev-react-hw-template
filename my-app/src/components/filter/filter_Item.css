@@ -2,3 +2,38 @@
     color: #b672ff;
     border-color: #b672ff;
 }
+
+.Author{
+    position: absolute;
+    border-radius: 12px;
+    background: #313131;
+    display: inline-flex;
+    padding: 34px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+.Year{
+    position: absolute;
+    border-radius: 12px;
+    background: #313131;
+    display: inline-flex;
+    padding: 34px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Genre{
+    position: absolute;
+    border-radius: 12px;
+    background: #313131;
+    display: inline-flex;
+    padding: 34px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+

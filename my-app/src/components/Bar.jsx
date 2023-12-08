@@ -1,13 +1,76 @@
 import React from "react";
+import "./Bar.css";
+import { styled } from "styled-components";
 
+const StyledBar = styled.div`
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background: rgba(28, 28, 28, 0.5);
+`
+const StyledBarContent = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+`
+const StyledBarPlayerProgress = styled.div`
+width: 100%;
+height: 5px;
+background: #2e2e2e;
+`
+const StyledBarPlayerBlock = styled.div`
+height: 73px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+`
+const StyledBarPlayer = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+`
+const StyledPlayerControls = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+padding: 0 27px 0 31px;
+`
+
+//const StyledBar = styled.div``
 function Bar() {
 return (
-<div className="bar">
-          <div className="bar__content">
-            <div className="bar__player-progress"></div>
-            <div className="bar__player-block">
-              <div className="bar__player player">
-                <div className="player__controls">
+<StyledBar>
+          <StyledBarContent>
+            <StyledBarPlayerProgress></StyledBarPlayerProgress>
+            <StyledBarPlayerBlock>
+              <StyledBarPlayer>
+                <StyledPlayerControls>
                   <div className="player__btn-prev">
                     <svg className="player__btn-prev-svg" alt="prev">
                       <use xlinkHref="img/icon/sprite.svg#icon-prev"></use>
@@ -33,7 +96,7 @@ return (
                       <use xlinkHref="img/icon/sprite.svg#icon-shuffle"></use>
                     </svg>
                   </div>
-                </div>
+                </StyledPlayerControls>
 
                 <div className="player__track-play track-play">
                   <div className="track-play__contain">
@@ -63,7 +126,7 @@ return (
                     </div>
                   </div>
                 </div>
-              </div>
+              </StyledBarPlayer>
               <div className="bar__volume-block volume">
                 <div className="volume__content">
                   <div className="volume__image">
@@ -79,9 +142,9 @@ return (
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </StyledBarPlayerBlock>
+          </StyledBarContent>
+        </StyledBar>
         )
         }
 export default Bar;
