@@ -2,6 +2,7 @@ import React from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { useEffect, useState } from "react";
 import SkeletonSideBar from "../Skeleton/Skeleton";
+import "./Style.css"
 
 function SideBar() {
   const [isLoading, setLoading] = useState(true);
