@@ -3,7 +3,7 @@ import "./filter_Item.css";
 
 export const GenreList = () => {
     return (
-        <div>
+        <div className="Genre">
             <div>Поп</div>
             <div>Рок</div>
             <div>Инди</div>
