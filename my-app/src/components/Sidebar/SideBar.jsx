@@ -3,6 +3,12 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { useEffect, useState } from "react";
 import SkeletonSideBar from "../Skeleton/Skeleton";
 import "./Style.css"
+import {styled} from "styled-components"
+
+const StyledMainSidebar = styled.div`
+max-width: 418px;
+padding: 20px 90px 20px 78px;
+`
 
 function SideBar() {
   const [isLoading, setLoading] = useState(true);
@@ -16,7 +22,7 @@ function SideBar() {
 
   if (isLoading)
     return (
-      <div className="main__sidebar sidebar">
+      <StyledMainSidebar>
         <div className="sidebar__personal">
           <SkeletonTheme
             baseColor="#bbb4b4"
@@ -42,7 +48,7 @@ function SideBar() {
             </div>
           </div>
         </div>
-      </div>
+      </StyledMainSidebar>
     );
 
   return (
