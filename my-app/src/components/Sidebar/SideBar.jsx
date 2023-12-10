@@ -10,6 +10,83 @@ max-width: 418px;
 padding: 20px 90px 20px 78px;
 `
 
+const StyledSidebarPersonal = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+padding: 12px 0 15px 0;
+`
+
+const StyledSidebarPersonalName= styled.p`
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #ffffff;
+margin-right: 16px;
+`
+
+const StyledSidebarBlock = styled.div`
+height: 100%;
+padding: 240px 0 0 0;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-pack: start;
+-ms-flex-pack: start;
+justify-content: flex-start;
+`
+
+const StyledSidebarList = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+`
+
+const StyledSidebarItem = styled.div`
+width: 250px;
+height: 150px;
+`
+
+const StyledSidebarIcon = styled.div`
+width: 43px;
+height: 43px;
+background-color: #313131;
+border-radius: 50%;
+cursor: pointer;
+`
+
+const StyledSidebarLink = styled.a`
+width: 100%;
+height: 100%;
+`
+
+const StyledSidebarImg = styled.img`
+width: 100%;
+height: auto;
+`
+
 function SideBar() {
   const [isLoading, setLoading] = useState(true);
 
@@ -23,76 +100,73 @@ function SideBar() {
   if (isLoading)
     return (
       <StyledMainSidebar>
-        <div className="sidebar__personal">
+        <StyledSidebarPersonal>
           <SkeletonTheme
             baseColor="#bbb4b4"
             highlightColor="#444"
             className="skeleton"
           >
-            <p className="sidebar__personal-name">
+            <StyledSidebarPersonalName>
               <Skeleton width={100} />
-            </p>
+            </StyledSidebarPersonalName>
             <Skeleton className="sidebar__avatar" />
           </SkeletonTheme>
-        </div>
-        <div className="sidebar__block">
-          <div className="sidebar__list">
-            <div className="sidebar__item">
+        </StyledSidebarPersonal>
+        <StyledSidebarBlock>
+          <StyledSidebarList>
+            <StyledSidebarItem>
               <SkeletonSideBar />
-            </div>
-            <div className="sidebar__item">
+            </StyledSidebarItem>
+            <StyledSidebarItem>
               <SkeletonSideBar />
-            </div>
-            <div className="sidebar__item">
+            </StyledSidebarItem>
+            <StyledSidebarItem>
               <SkeletonSideBar />
-            </div>
-          </div>
-        </div>
+            </StyledSidebarItem>
+          </StyledSidebarList>
+        </StyledSidebarBlock>
       </StyledMainSidebar>
     );
 
   return (
-    <div className="main__sidebar sidebar">
-      <div className="sidebar__personal">
-        <p className="sidebar__personal-name">Sergey.Ivanov</p>
-        <div className="sidebar__icon">
+    <StyledMainSidebar>
+      <StyledSidebarPersonal>
+        <StyledSidebarPersonalName>Sergey.Ivanov</StyledSidebarPersonalName>
+        <StyledSidebarIcon>
           <svg alt="logout">
             <use xlinkHref="img/icon/sprite.svg#logout"></use>
           </svg>
-        </div>
-      </div>
-      <div className="sidebar__block">
-        <div className="sidebar__list">
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
+        </StyledSidebarIcon>
+      </StyledSidebarPersonal>
+      <StyledSidebarBlock>
+        <StyledSidebarList>
+          <StyledSidebarItem>
+            <StyledSidebarLink href="#">
+              <StyledSidebarImg
                 src="/img/playlist01.png"
                 alt="day's playlist"
               />
-            </a>
-          </div>
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
+            </StyledSidebarLink>
+          </StyledSidebarItem>
+          <StyledSidebarItem>
+            <StyledSidebarLink href="#">
+              <StyledSidebarImg
                 src="/img/playlist02.png"
                 alt="day's playlist"
               />
-            </a>
-          </div>
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
+            </StyledSidebarLink>
+          </StyledSidebarItem>
+          <StyledSidebarItem>
+            <StyledSidebarLink href="#">
+              <StyledSidebarImg
                 src="/img/playlist03.png"
                 alt="day's playlist"
               />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+            </StyledSidebarLink>
+          </StyledSidebarItem>
+        </StyledSidebarList>
+      </StyledSidebarBlock>
+    </StyledMainSidebar>
   );
 }
 export default SideBar;
