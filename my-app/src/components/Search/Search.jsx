@@ -1,5 +1,5 @@
 import React from "react";
-import Filter from "./filter/filter";
+
 
 
 function Search () {
