@@ -46,11 +46,12 @@ body {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-color: #383838;
+
+  background-color: black;
 }
 
 .container {
@@ -187,6 +188,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.center_block_wrapper{
+  display: flex;
 }
 
 .centerblock__search {
