@@ -1,6 +1,32 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import SkeletonTrack from "../Skeleton/SkeletonTrack";
+import "./style.css"
+import { styled } from "styled-components";
+
+const StyledMainCenterblock = styled.div`
+display: flex;
+flex-wrap: wrap;
+width: auto;
+-webkit-box-flex: 3;
+-ms-flex-positive: 3;
+flex-grow: 3;
+padding: 20px 40px 20px 111px;
+background-color: black;
+`
+
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+//const StyledMainCenterblock = styled.div``
+
+
 
 function Player(props) {
   const [isLoading, setLoading] = useState(true);
@@ -14,7 +40,7 @@ function Player(props) {
 
   if (isLoading)
     return (
-      <div className="main__centerblock centerblock">
+      <StyledMainCenterblock>
         <h2 className="centerblock__h2">{props.namePage}</h2>
         <div className="centerblock__content">
           <div className="content__title playlist-title">
@@ -29,11 +55,11 @@ function Player(props) {
           </div>
         </div>
         <SkeletonTrack />
-      </div>
+      </StyledMainCenterblock>
     );
 
   return (
-    <div className="main__centerblock centerblock">
+    <StyledMainCenterblock>
       <h2 className="centerblock__h2">{props.namePage}</h2>
 
       <div className="centerblock__content">
@@ -615,7 +641,7 @@ function Player(props) {
           </div>
         </div>
       </div>
-    </div>
+    </StyledMainCenterblock>
   );
 }
 
