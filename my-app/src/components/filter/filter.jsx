@@ -29,7 +29,26 @@ line-height: 24px;
 gap: 15px;
 background-color: black;
 `
-//const StyledFilterTitle = styled.div``
+const FilterButton = styled.button`
+width: 144px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+border: 1px solid #ffffff;
+border-radius: 60px;
+padding: 6px 20px;
+& :not(:last-child) {
+margin-right: 10px;
+& --active, .--active:hover{
+    color: #b672ff;
+    border-color: #b672ff;
+& ::active {
+    border-color: #ad61ff;
+    color: #ad61ff;
+    cursor: pointer;
+background-color: ${props => props.isVisibleAuthor ? "filter__button button-author _btn-text --active" : "filter__button button-author _btn-text" }
+`
 //const StyledFilterTitle = styled.div``
 //const StyledFilterTitle = styled.div``
 
@@ -49,11 +68,11 @@ function Filter () {
     return (
             <StyledFilterTitle>Искать по:
             <StyledFilterContent>
-                <div className={isVisibleAuthor ? "filter__button button-author _btn-text --active" : "filter__button button-author _btn-text"}
+                <FilterButton 
                     
                     onClick={() => onFilterClick (AUTHOR)}>
                     исполнителю
-                </div>
+                </FilterButton>
                 {isVisibleAuthor && <AuthorList />}
             </StyledFilterContent>
             <StyledFilterContent>

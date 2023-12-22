@@ -1,6 +1,5 @@
 .--active, .--active:hover{
-    color: #b672ff;
-    border-color: #b672ff;
+
 }
 
 .Author{
@@ -16,10 +15,7 @@
 
 }
 
-._btn-text:active {
-    border-color: #ad61ff;
-    color: #ad61ff;
-    cursor: pointer;
+._btn-text{
   }
 
   .filter__title {
@@ -27,17 +23,10 @@
   }
   
   .filter__button {
-    width: 144px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    border: 1px solid #ffffff;
-    border-radius: 60px;
-    padding: 6px 20px;
+
   }
   
   .filter__button:not(:last-child) {
-    margin-right: 10px;
+
   }
   
