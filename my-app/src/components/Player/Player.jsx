@@ -199,7 +199,34 @@ line-height: 24px;
 text-align: right;
 color: #696969;
 `
-//const StyledMainCenterblock = styled.div``
+const StyledTrackTime = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+`
+const StyledTrackTitleText = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+width: 447px;
+`
 //const StyledMainCenterblock = styled.div``
 
 function Player(props) {
@@ -256,11 +283,11 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Guilt <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -272,12 +299,12 @@ function Player(props) {
                   Welcome Reality
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText >4:44</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -289,11 +316,11 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Elektro <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -305,12 +332,12 @@ function Player(props) {
                   Elektro
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>2:22</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -322,11 +349,11 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     I’m Fire <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -338,12 +365,12 @@ function Player(props) {
                   I’m Fire
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>2:22</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -355,12 +382,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Non Stop
                     <StyledTrackTitleSpan>(Remix)</StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -372,12 +399,12 @@ function Player(props) {
                   Non Stop
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText >4:12</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -389,12 +416,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Run Run
                     <StyledTrackTitleSpan>(feat. AR/CO)</StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -406,12 +433,12 @@ function Player(props) {
                   Run Run
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
-                <span className="track__time-text">2:54</span>
-              </div>
+                <StyledTrackTimeText>2:54</StyledTrackTimeText>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -423,12 +450,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Eyes on Fire
                     <StyledTrackTitleSpan>(Zeds Dead Remix)</StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -440,12 +467,12 @@ function Player(props) {
                   Eyes on Fire
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>5:20</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -457,14 +484,14 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Mucho Bien
                     <StyledTrackTitleSpan>
                       (Hi Profile Remix)
                     </StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -476,12 +503,12 @@ function Player(props) {
                   Mucho Bien
                 </StyledTrackAuthorLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>3:41</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -493,12 +520,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -510,12 +537,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAuthorLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -527,12 +554,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -544,12 +571,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAuthorLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
           <StyledPlaylistItem>
@@ -560,12 +587,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -577,12 +604,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAuthorLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
           <StyledPlaylistItem>
@@ -593,12 +620,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -610,12 +637,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAuthorLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
           <StyledPlaylistItem>
@@ -626,12 +653,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -643,12 +670,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAuthorLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
           <StyledPlaylistItem>
@@ -659,12 +686,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -676,12 +703,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
           <StyledPlaylistItem>
@@ -692,12 +719,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink  href="http://">
                     Knives n Cherries
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -709,12 +736,12 @@ function Player(props) {
                   Captivating
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>1:48</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -726,12 +753,12 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     How Deep Is Your Love
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -743,12 +770,12 @@ function Player(props) {
                   How Deep Is Your Love
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>3:32</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -760,11 +787,11 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     Morena <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://">
@@ -776,12 +803,12 @@ function Player(props) {
                   Soundz Made in Romania
                 </StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText>3:36</StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
 
@@ -793,11 +820,11 @@ function Player(props) {
                     <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
                   </StyledTrackTitleSvg>
                 </StyledTrackTitleImage>
-                <div className="track__title-text">
+                <StyledTrackTitleText>
                   <StyledTrackTitleLink href="http://">
                     <StyledTrackTitleSpan></StyledTrackTitleSpan>
                   </StyledTrackTitleLink>
-                </div>
+                </StyledTrackTitleText>
               </StyledTrackTitle>
               <StyledTrackAuthor>
                 <StyledTrackAuthorLink href="http://"></StyledTrackAuthorLink>
@@ -805,12 +832,12 @@ function Player(props) {
               <StyledTrackAlbum>
                 <StyledTrackAlbumLink href="http://"></StyledTrackAlbumLink>
               </StyledTrackAlbum>
-              <div className="track__time">
+              <StyledTrackTime>
                 <StyledTrackTimeSvg alt="time">
                   <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
                 </StyledTrackTimeSvg>
                 <StyledTrackTimeText></StyledTrackTimeText>
-              </div>
+              </StyledTrackTime>
             </StyledPlaylistTrack>
           </StyledPlaylistItem>
         </StyledContentPlaylist>
