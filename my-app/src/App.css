@@ -30,8 +30,8 @@ ul li {
 @font-face {
   font-family: "StratosSkyeng";
   src: local("StratosSkyeng"), local("StratosSkyeng"),
-    url("../fonts/StratosSkyeng.woff2") format("woff2"),
-    url("../fonts/StratosSkyeng.woff") format("woff");
+    url("../public/fonts/StratosSkyeng.woff2") format("woff2"),
+    url("../public/fonts/StratosSkyeng.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -45,10 +45,12 @@ body {
 }
 
 .wrapper {
+  display: flex;
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-color: #383838;
+
+  background-color: black;
 }
 
 .container {
@@ -102,21 +104,27 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background-color: black;
 }
 
 .main__nav {
   width: 244px;
-  background-color: #181818;
+  background-color: #000000;
   padding: 20px 0 20px 36px;
 }
 
 .main__centerblock {
+  display: flex;
+  flex-wrap: wrap;
   width: auto;
   -webkit-box-flex: 3;
   -ms-flex-positive: 3;
   flex-grow: 3;
   padding: 20px 40px 20px 111px;
+  background-color: black;
 }
+
+
 
 .main__sidebar {
   max-width: 418px;
@@ -181,6 +189,10 @@ body {
   line-height: 24px;
 }
 
+.center_block_wrapper{
+  display: flex;
+}
+
 .centerblock__search {
   width: 100%;
   border-bottom: 1px solid #4e4e4e;
@@ -195,6 +207,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
 }
 
 .centerblock__h2 {
@@ -228,6 +241,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: black;
 }
 
 .search__svg {
@@ -289,14 +303,21 @@ body {
 }
 
 .filter__title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 40px 20px 111px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 15px;
+  gap: 15px;
+  background-color: black;
 }
 
 .filter__button {
+  width: 144px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -876,4 +897,45 @@ body {
 
 .volume__progress-line {
   width: 109px;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
